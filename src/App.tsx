@@ -16,6 +16,8 @@ const Mathema = lazy(async () => await import ('./Components/Mathema/Mathema'))
 const Admin = lazy(async () => await import ('./Components/Pages/Admin/Admin'))
 const Services = lazy(async () => await import ('./Components/Pages/Services/Services'))
 const Register = lazy(async () => await import ('./Components/Pages/Register/Register'))
+const Impressum = lazy(async () => await import ('./Components/Pages/Impressum'))
+const Datenschutz = lazy(async () => await import ('./Components/Pages/Datenschutz'))
 
 const App = (): React.JSX.Element => {
 
@@ -35,6 +37,8 @@ const App = (): React.JSX.Element => {
         <Route path="/:lng/math" element={<Mathema />} />
         <Route path="/:lng/connectmysite" element={<Admin />} />
         <Route path="/:lng/registration" element={<Register />} />
+        <Route path="/:lng/impressum" element={<Impressum />} />
+        <Route path="/:lng/datenschutz" element={<Datenschutz />} />
         
                  {/* Redirect invalid langs to /en */}
           {/* <Route path=":lng" element={<Navigate to="/en" replace />} /> */}

@@ -53,6 +53,8 @@ const ABFooter = (): JSX.Element => {
                 <li key={'phone1'}><FontAwesomeIcon icon={faPhone} /> +49 157 38936214<br />(mobile, WhatsApp)</li>
                 <li key={'whats2'}><FontAwesomeIcon icon={faPhone} /> +7 9261803635 <br />(mobile, WhatsApp)</li>
                 <li key={'whats3'}><FontAwesomeIcon icon={faFileSignature} /> <Link to={`/${lang}/contacts`} >Send request</Link></li>
+                <li key={'impressum'}><Link to={`/${lang}/impressum`} >Impressum</Link></li>
+                <li key={'datenschutz'}><Link to={`/${lang}/datenschutz`} >Datenschutz</Link></li>
             </ul>
 
         </Col>
